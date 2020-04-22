@@ -376,7 +376,7 @@ BigNum BigNum::operator+ (const BigNum& value) const {
         } else {
             cpy = *this;
             cpy.isPositive = true;
-            ans = value - *this;
+            ans = value - cpy;
         }
     }
     ans.repairSize();
